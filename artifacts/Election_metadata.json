@@ -28,6 +28,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "contractOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "electionTime",
 				"outputs": [
 					{
@@ -82,9 +95,9 @@
 				"name": "userVotes",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bool",
 						"name": "",
-						"type": "uint256"
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -151,11 +164,11 @@
 	},
 	"sources": {
 		"base.sol": {
-			"keccak256": "0x4961f1f1c947c5c0a4b8ae46ab3f33cc3afc3dd0945e923b52070b1deea41cf6",
+			"keccak256": "0x0f8d4cb8a7b12d0fabb78bafbd62552a787b4b977fe5aecdc87e45116eec27cf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://737cfdbb7221234faf77d839a43561103d115272a77942a24fb4991b6633f664",
-				"dweb:/ipfs/QmW7tMKDXnjwkkjEj2fYAaK5poiENTBrSZPf4Y4kM38ErN"
+				"bzz-raw://cbc5c3908c5a2df82a044d8e6fc18e3390a20aeaf353e9847290d3bfdbcfe889",
+				"dweb:/ipfs/QmddaaKF7n1Qv1kxtbnFWqgfoqU4agUBDY2EeUksFFDhr4"
 			]
 		}
 	},
