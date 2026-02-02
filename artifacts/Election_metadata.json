@@ -27,6 +27,27 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_pickedElector",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_totalElectors",
+						"type": "uint256"
+					}
+				],
+				"name": "ElectorDoesNotExist",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "YourAddressCantVote",
+				"type": "error"
+			},
+			{
 				"inputs": [],
 				"name": "contractOwner",
 				"outputs": [
@@ -41,7 +62,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "electionTime",
+				"name": "electionEndTime",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -164,11 +185,11 @@
 	},
 	"sources": {
 		"base.sol": {
-			"keccak256": "0x0f8d4cb8a7b12d0fabb78bafbd62552a787b4b977fe5aecdc87e45116eec27cf",
+			"keccak256": "0x2b4c823ad6b0d930012520cebad5c0cdd52d21b166d82ccc6422226eb0210ec6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cbc5c3908c5a2df82a044d8e6fc18e3390a20aeaf353e9847290d3bfdbcfe889",
-				"dweb:/ipfs/QmddaaKF7n1Qv1kxtbnFWqgfoqU4agUBDY2EeUksFFDhr4"
+				"bzz-raw://3ccfdcb58667155fe710c7fe8cad69f080e38345e165c3e5dbc86e167079bd8d",
+				"dweb:/ipfs/QmNnTZS4aeYHEAsUdsTDiGthCkKbRoW5rwzBcuQxkUcdeq"
 			]
 		}
 	},
