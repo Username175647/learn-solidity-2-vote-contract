@@ -12,6 +12,7 @@ contract Election {
     mapping(uint256 => uint256) public votesCount;
     error YourAddressCantVote();
     error ElectorDoesNotExist(uint256 _pickedElector, uint256 _totalElectors);
+    error OnlyForOwner();
 
     //["Alex","Kostya","Micke"]
 
@@ -31,5 +32,45 @@ contract Election {
         votesCount[_numberOfElector] += 1;
     }
 
+    modifier OnlyOwner() { //Perform before function
+        require(msg.sender == contractOwner, OnlyForOwner());
+        _;
+    }
+
+    function resetMaxVotes(uint256 _newMaxVotes) public OnlyOwner {
+        require(_newMaxVotes > maxVotes, "Max votes can't decrease");
+        maxVotes = _newMaxVotes;
+    }
+
+    function resetElectionTime(uint256 _newElectionTime) public {
+        require(msg.sender == contractOwner, OnlyForOwner());
+        require(_newElectionTime > electionEndTime, "Election time can't decrease");
+        electionEndTime = _newElectionTime;
+    }
+
 }
 
+contract MathModifier {
+    uint256 public value = 1;
+    uint256 public x = 10;
+
+    modifier sandwich() {
+        value += 1;
+        _;
+        value +=2;
+    }
+
+    function exampleFunc() public sandwich {
+        value *=2;
+    }
+
+    modifier checker(uint256 _numberToCheck) {
+        require(_numberToCheck >= 10, "Number less than 10");
+        _;
+    }
+
+    function summNumbers(uint256 _x) public checker(_x) {
+        x = _x * 100;
+    }
+
+}

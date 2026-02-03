@@ -44,6 +44,11 @@
 			},
 			{
 				"inputs": [],
+				"name": "OnlyForOwner",
+				"type": "error"
+			},
+			{
+				"inputs": [],
 				"name": "YourAddressCantVote",
 				"type": "error"
 			},
@@ -103,6 +108,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newElectionTime",
+						"type": "uint256"
+					}
+				],
+				"name": "resetElectionTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newMaxVotes",
+						"type": "uint256"
+					}
+				],
+				"name": "resetMaxVotes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -185,11 +216,11 @@
 	},
 	"sources": {
 		"base.sol": {
-			"keccak256": "0x2b4c823ad6b0d930012520cebad5c0cdd52d21b166d82ccc6422226eb0210ec6",
+			"keccak256": "0xc3d7a24d365a7f48112b79a7337fc7b4d4da5612c64198ea812b91881d8b3296",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3ccfdcb58667155fe710c7fe8cad69f080e38345e165c3e5dbc86e167079bd8d",
-				"dweb:/ipfs/QmNnTZS4aeYHEAsUdsTDiGthCkKbRoW5rwzBcuQxkUcdeq"
+				"bzz-raw://3a325447310c43ab7664c90e14f0c89e3814a525033eecad72618676bb4e4c80",
+				"dweb:/ipfs/QmYPqGCiVG1L8df4t9rnWwZLXjC1caPXaU2yFN4RuzrrMt"
 			]
 		}
 	},
