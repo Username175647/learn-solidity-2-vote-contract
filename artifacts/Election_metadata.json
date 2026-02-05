@@ -79,6 +79,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "electionResult",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "winner",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -216,11 +229,11 @@
 	},
 	"sources": {
 		"base.sol": {
-			"keccak256": "0xc3d7a24d365a7f48112b79a7337fc7b4d4da5612c64198ea812b91881d8b3296",
+			"keccak256": "0x089f3352a255f04115c226f328062c4084125b57d919fc8f4d05931aa498b656",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3a325447310c43ab7664c90e14f0c89e3814a525033eecad72618676bb4e4c80",
-				"dweb:/ipfs/QmYPqGCiVG1L8df4t9rnWwZLXjC1caPXaU2yFN4RuzrrMt"
+				"bzz-raw://9f34ac1225c0572e2b533662f1ff290249dda7cf638a88695a1ad568ad5d9857",
+				"dweb:/ipfs/QmVN4vxNNxEGWAyKZBBY6y3rQkgPvfkbAtSTXoUyzho3HJ"
 			]
 		}
 	},
