@@ -50,11 +50,11 @@ contract Election {
     function electionResult() public view returns(string memory winner) {
         uint256 leaderIndex = 0;
         for (uint256 i = 0; i < electors.length; i++) {
-            if (votesCount[i] > votesCount[currentLeader]) {
-                currentLeader = i;
+            if (votesCount[i] > votesCount[leaderIndex]) {
+                leaderIndex = i;
             }
         }
-        return electors[currentLeader];
+        return electors[leaderIndex];
         
     }
 
